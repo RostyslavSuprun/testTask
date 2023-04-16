@@ -10,7 +10,7 @@ const ProductListItem = ({ product, onEditProduct, onDeleteProduct }) => {
       </a>
       <img
         src={product.imgUrl}
-        alt="product image"
+        alt={product.name}
         className={styles.image}
       ></img>
       <p className={styles.name}>width: {product.width} </p>
