@@ -8,7 +8,11 @@ const ProductListItem = ({ product, onEditProduct, onDeleteProduct }) => {
       <a className={styles.url} href={product.imgUrl} target="blank">
         full size picture
       </a>
-      <img src={product.imgUrl} className={styles.image}></img>
+      <img
+        src={product.imgUrl}
+        alt="product image"
+        className={styles.image}
+      ></img>
       <p className={styles.name}>width: {product.width} </p>
       <p className={styles.name}>height: {product.height} </p>
       <p className={styles.name}>weight: {product.weight} </p>
